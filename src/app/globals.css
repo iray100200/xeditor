@@ -1,0 +1,92 @@
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+  --md-ext-tip-color: #808080;
+  --md-ext-tip-flex-basis: 48px;
+  --md-ext-tip-font-size: 0.875rem;
+  --md-ext-tip-left: -32px;
+  --md-ext-tip-active-color: #909090;
+  --md-ext-tip-font-weight: 200;
+
+  --md-node-h1-font-size: 1.6rem;
+  --md-node-h2-font-size: 1.4rem;
+  --md-node-h3-font-size: 1.2rem;
+  --md-node-h4-font-size: 1rem;
+  --md-node-h5-font-size: 0.825rem;
+  --md-node-h6-font-size: 0.825rem;
+
+  --md-node-h1-font-weight: 400;
+  --md-node-h2-font-weight: 400;
+  --md-node-h3-font-weight: 400;
+  --md-node-h4-font-weight: 400;
+  --md-node-h5-font-weight: 400;
+  --md-node-h6-font-weight: 200;
+
+  --md-node-h1-line-height: 32px;
+  --md-node-h2-line-height: 32px;
+  --md-node-h3-line-height: 32px;
+  --md-node-h4-line-height: 32px;
+  --md-node-h5-line-height: 32px;
+  --md-node-h6-line-height: 32px;
+
+  --md-toolbar-button-active-color: #000;
+  --md-toolbar-button-color: #666;
+
+  --md-toolbar-border-bottom: 1px solid #ccc;
+  --md-toolbar-button-active-font-weight: 600;
+
+  --md-toolbar-button-active-bg-color: #f0f1f2;
+  --md-tooltip-divider-color: #ccc;
+
+  --md-tooltip-popper-bgcolor: #fff;
+  --md-tooltip-color-selector-bgcolor: #fff;
+  --md-tooltip-color-selector-default-item-hover-bgcolor: rgba(0, 0, 0, 0.08);
+  --md-toolbar-icon-button-color: #666;
+  --md-tooltip-color-selector-divider-color: #e2e2e3;
+  --md-tooltip-popper-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 0, 0, 0;
+    --md-ext-tip-color: #aaa;
+    --md-ext-tip-active-color: #ccc;
+    --md-toolbar-button-active-color: #fff;
+    --md-toolbar-button-color: #aaa;
+
+    --md-toolbar-border-bottom: 1px solid #333;
+    --md-toolbar-button-active-bg-color: #202020;
+    --md-tooltip-divider-color: #333;
+
+    --md-toolbar-icon-button-color: #aaa;
+    --md-tooltip-popper-shadow: 0px 2px 8px -1px rgba(255, 255, 255, 0.2), 0px 1px 8px 0px rgba(255, 255, 255, 0.14), 0px 1px 8px 0px rgba(255, 255, 255, 0.12);
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  margin: 0;
+  background-color: rgb(var(--background-rgb));
+  user-select: none;
+  font-family: 'Roboto';
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+[contenteditable="true"] {
+  outline: none;
+}
+
+.dragging {
+  cursor: grabbing;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[data-slate-zero-width] {
+  display: inline-block;
+  min-width: 1px;
+}
